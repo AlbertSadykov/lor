@@ -1,0 +1,89 @@
+.header {
+  background-color: #fff;
+}
+
+.divider{
+  height: 1px;
+  background-color: $bg;
+}
+
+.top__head {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.search__block {
+  flex: 1;
+  margin-right: 4.7rem;
+
+  @media (max-width:991px){
+    flex:auto;
+  }
+}
+
+.search__input {
+  display: flex;
+  align-items: center;
+  background-color: $input;
+  padding: 0 1.8rem;
+
+  input {
+    position: relative;
+    padding-left: 3.6rem;
+    vertical-align: middle;
+    font-size: 1.3rem;
+    height: 4.5rem;
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 1.7rem;
+    height: 1.7rem;
+    background: url(/img/search.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.header__phone {
+  margin-right: 7.4rem;
+
+  a{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color:inherit;
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+}
+
+
+.main__head{
+  display: flex;
+  gap: 70px;
+  padding: 1.5rem 0 2rem;
+}
+
+.company__info{
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1.4rem;
+}
+
+
+.info__title{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  margin-bottom: .4rem;
+}
+
+.info__text{
+  color:$blue;
+  
+}

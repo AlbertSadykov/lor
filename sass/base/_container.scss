@@ -1,0 +1,9 @@
+.container{
+  max-width: $container-xl;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include breakpoint ($notebook-bp){
+    max-width: $container-l;
+  }
+}

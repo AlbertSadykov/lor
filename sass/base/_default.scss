@@ -1,0 +1,56 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $bg;
+  font-family: SF Pro Display;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color:$text;
+}
+
+a{
+  color:$link;
+
+}
+
+input{
+  border-radius: 2rem;
+
+  &::placeholder{
+    color:$blue;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+}
+
+
+.btn{
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 1.1rem 3rem;
+  background-color: $red;
+  border-radius: 3px;
+  color:$white;
+  transition: .2s linear;
+
+  &:hover{
+    background: none;
+    color:$red;
+    border: 1px solid $red;
+  }
+
+  &--transparent{
+    background: none;
+    color:$red;
+    border: 1px solid $red;
+
+    &:hover{
+      background: $red;
+      color:$white;
+    }
+  }
+}
