@@ -13,6 +13,8 @@ body {
 
 a {
   color: #315488;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 input {
@@ -48,12 +50,13 @@ input::placeholder {
   font-size: 1.7rem;
   font-weight: 400;
   text-align: center;
-  padding: 1.1rem 3rem;
+  padding: 1rem 3rem;
   background-color: #ce1e2f;
   border-radius: 3px;
   color: #fff;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
+  border: 1px solid transparent;
 }
 .btn:hover {
   background: none;
@@ -287,8 +290,17 @@ legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 7rem;
   padding: 1.5rem 0 2rem;
+}
+.main__head .logo {
+  width: 33.3333333333%;
+}
+.main__head .logo img {
+  height: 7.4rem;
 }
 
 .company__info {
@@ -297,6 +309,11 @@ legend {
   display: flex;
   gap: 2.5rem;
   font-size: 1.4rem;
+}
+.company__info .info__block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .info__title {
@@ -312,5 +329,42 @@ legend {
 }
 
 .info__text {
+  display: block;
   color: #315488;
+}
+
+.header__menu {
+  background: -webkit-gradient(linear, left top, left bottom, from(#194483), to(#0f2f60));
+  background: linear-gradient(180deg, #194483 0%, #0f2f60 100%);
+  padding: 1rem 0;
+}
+
+.menu-bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+.nav ul li {
+  color: #c3dbff;
+}
+.nav ul li a {
+  font-size: 1.5rem;
+  color: #c3dbff;
+  margin-right: 2px;
+}
+.nav ul li:hover a {
+  color: #fff;
 }

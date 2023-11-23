@@ -13,6 +13,7 @@ body {
 
 a{
   color:$link;
+  transition:.2s linear;
 
 }
 
@@ -31,11 +32,12 @@ input{
   font-size: 1.7rem;
   font-weight: 400;
   text-align: center;
-  padding: 1.1rem 3rem;
+  padding: 1rem 3rem;
   background-color: $red;
   border-radius: 3px;
   color:$white;
   transition: .2s linear;
+  border:1px solid transparent;
 
   &:hover{
     background: none;

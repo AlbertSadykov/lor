@@ -2,7 +2,7 @@
   background-color: #fff;
 }
 
-.divider{
+.divider {
   height: 1px;
   background-color: $bg;
 }
@@ -17,8 +17,8 @@
   flex: 1;
   margin-right: 4.7rem;
 
-  @media (max-width:991px){
-    flex:auto;
+  @media (max-width: 991px) {
+    flex: auto;
   }
 }
 
@@ -51,39 +51,83 @@
 .header__phone {
   margin-right: 7.4rem;
 
-  a{
+  a {
     display: flex;
     align-items: center;
     gap: 1.5rem;
-    color:inherit;
+    color: inherit;
     font-size: 2.2rem;
     font-weight: 600;
   }
 }
 
-
-.main__head{
+.main__head {
   display: flex;
-  gap: 70px;
+  justify-content: space-between;
+  gap: 7rem;
   padding: 1.5rem 0 2rem;
+
+  .logo {
+    width: calc(100% / 3);
+  }
+
+  .logo img {
+    height: 7.4rem;
+  }
 }
 
-.company__info{
+.company__info {
   display: flex;
   gap: 2.5rem;
   font-size: 1.4rem;
+
+  .info__block {
+    flex: 1;
+  }
 }
 
-
-.info__title{
+.info__title {
   display: flex;
   align-items: center;
   gap: 6px;
   font-weight: 500;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
 }
 
-.info__text{
-  color:$blue;
-  
+.info__text {
+  display: block;
+  color: $blue;
 }
+
+.header__menu {
+  background: linear-gradient(180deg, #194483 0%, #0f2f60 100%);
+  padding: 1rem 0;
+}
+
+.menu-bg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+
+  li {
+    color: #c3dbff;
+
+    a {
+      font-size: 1.5rem;
+      color: #c3dbff;
+      margin-right: 2px;
+    }
+
+    &:hover a {
+      color:$white;
+  }
+
+}
+
+}
+
