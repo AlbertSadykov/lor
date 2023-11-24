@@ -1,0 +1,24 @@
+.features{
+  margin-bottom: 6.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.features__item{
+  width: calc(100% / 3 - 4rem);
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+
+  img{
+    width: 3rem;
+  }
+
+  p{
+    font-size: 1.7rem;
+    color: #122137;
+    
+  }
+}

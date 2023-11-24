@@ -1,0 +1,80 @@
+.banner{
+  margin: 4rem 0 5rem;
+}
+
+.banner__item{
+  position: relative;
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.banner__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('/img/banner1.jpg') no-repeat;
+  background-size: cover;
+  background-position: right center;
+  z-index: -1;
+  width: 60%; /* устанавливаем ширину в процентах, например, 60% */
+}
+
+.banner__content {
+  position: relative;
+  z-index: 1; /* устанавливаем z-index, чтобы контент был над слоем с фоном */
+  width: 40%;
+  padding: 3.9rem 4.2rem 5.7rem 4.9rem;
+  background-color: $white; /* если нужен фон контентной части */
+
+
+  h1{
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #163E7A;
+    margin-bottom: 1.8rem;
+  }
+
+  p{
+    font-size: 15px;
+    color:#163E7A;
+    margin-bottom: 3rem;
+  }
+}
+
+.promo__date{
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  color:#93AFDA;
+  margin-bottom: 3rem;
+  
+}
+
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  cursor: pointer;
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  margin: 0 4px;
+  background-color: #CCDBF2;
+}
+
+.dot.active {
+  background-color: #315488;
+}
+

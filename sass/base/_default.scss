@@ -29,20 +29,20 @@ input{
 
 
 .btn{
+  display:inline-block;
   font-size: 1.7rem;
   font-weight: 400;
   text-align: center;
-  padding: 1rem 3rem;
+  padding: 1rem 3.7rem;
   background-color: $red;
   border-radius: 3px;
   color:$white;
   transition: .2s linear;
-  border:1px solid transparent;
+
 
   &:hover{
-    background: none;
-    color:$red;
-    border: 1px solid $red;
+    background-color: $red-second;
+  
   }
 
   &--transparent{
@@ -53,6 +53,14 @@ input{
     &:hover{
       background: $red;
       color:$white;
+    }
+  }
+
+  &--blue{
+    background-color: $blue-second;
+
+    &:hover{
+      background-color: $blue;
     }
   }
 }

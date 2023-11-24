@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -47,21 +48,19 @@ input::placeholder {
 }
 
 .btn {
+  display: inline-block;
   font-size: 1.7rem;
   font-weight: 400;
   text-align: center;
-  padding: 1rem 3rem;
+  padding: 1rem 3.7rem;
   background-color: #ce1e2f;
   border-radius: 3px;
   color: #fff;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
-  border: 1px solid transparent;
 }
 .btn:hover {
-  background: none;
-  color: #ce1e2f;
-  border: 1px solid #ce1e2f;
+  background-color: #b50117;
 }
 .btn--transparent {
   background: none;
@@ -71,6 +70,12 @@ input::placeholder {
 .btn--transparent:hover {
   background: #ce1e2f;
   color: #fff;
+}
+.btn--blue {
+  background-color: #5b85c3;
+}
+.btn--blue:hover {
+  background-color: #315488;
 }
 
 .container {
@@ -367,4 +372,126 @@ legend {
 }
 .nav ul li:hover a {
   color: #fff;
+}
+
+.banner {
+  margin: 4rem 0 5rem;
+}
+
+.banner__item {
+  position: relative;
+  margin-bottom: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.banner__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("/img/banner1.jpg") no-repeat;
+  background-size: cover;
+  background-position: right center;
+  z-index: -1;
+  width: 60%; /* устанавливаем ширину в процентах, например, 60% */
+}
+
+.banner__content {
+  position: relative;
+  z-index: 1; /* устанавливаем z-index, чтобы контент был над слоем с фоном */
+  width: 40%;
+  padding: 3.9rem 4.2rem 5.7rem 4.9rem;
+  background-color: #fff; /* если нужен фон контентной части */
+}
+.banner__content h1 {
+  font-size: 2.8rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #163E7A;
+  margin-bottom: 1.8rem;
+}
+.banner__content p {
+  font-size: 15px;
+  color: #163E7A;
+  margin-bottom: 3rem;
+}
+
+.promo__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.1rem;
+  color: #93AFDA;
+  margin-bottom: 3rem;
+}
+
+.dots-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dot {
+  cursor: pointer;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  margin: 0 4px;
+  background-color: #CCDBF2;
+}
+
+.dot.active {
+  background-color: #315488;
+}
+
+.features {
+  margin-bottom: 6.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 4rem;
+}
+
+.features__item {
+  width: calc(33.3333333333% - 4rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 3rem;
+}
+.features__item img {
+  width: 3rem;
+}
+.features__item p {
+  font-size: 1.7rem;
+  color: #122137;
 }
